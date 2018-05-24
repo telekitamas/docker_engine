@@ -25,7 +25,7 @@ sudo usermod -aG docker $username && echo 'OK'
 #EOF
 #touch web/index.html
 #cat <<EOF> web/index.html
-#oke
+#Sikeres vizsga!
 #EOF
 #cd ~
 cd Docker
