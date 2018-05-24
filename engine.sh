@@ -9,7 +9,7 @@ sudo apt-get update
 apt-cache policy docker-ce
 sudo apt-get install -y docker-ce
 sudo systemctl status docker | grep docker.service
-sudo usermod -aG docker $username && echo 'dockerjog OK'
+sudo usermod -aG docker $username && echo 'OK'
 #cd ~
 #mkdir Docker
 #cd Docker
