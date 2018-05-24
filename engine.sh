@@ -29,5 +29,5 @@ Sikeres vizsga!
 EOF
 cd ~
 cd Docker
-docker build -t nginx .
-docker run -p 80:80 -d nginx
+sudo docker build -t nginx .
+sudo docker run -p 80:80 -d nginx
