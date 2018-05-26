@@ -31,7 +31,7 @@ RUN cd /usr/share/nginx/html/ && rm *
 COPY web /usr/share/nginx/html
 EXPOSE 80 443
 CMD ["nginx", "-g", "daemon off;"]
-EOF #End Of File
+EOF
 
 #HTML file létrehozása, szerkesztése
 touch web/index.html
@@ -39,7 +39,7 @@ cat <<EOF> web/index.html
 
 #Megjelenítendő szöveg
 Sikeres vizsga!
-EOF #End Of File
+EOF
 
 #Docker image készítése, futtatása
 cd ~
