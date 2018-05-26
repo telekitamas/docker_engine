@@ -36,8 +36,6 @@ EOF
 #HTML file létrehozása, szerkesztése
 touch web/index.html
 cat <<EOF> web/index.html
-
-#Megjelenítendő szöveg
 Sikeres vizsga!
 EOF
 
