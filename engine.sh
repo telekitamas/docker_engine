@@ -26,6 +26,7 @@ mkdir web
 touch Dockerfile
 cat <<EOF> Dockerfile
 FROM nginx
+MAINTAINER <Teleki Tamás>
 COPY web /usr/share/nginx/html
 RUN cd /usr/share/nginx/html/ && rm *
 COPY web /usr/share/nginx/html
@@ -36,11 +37,11 @@ EOF
 #HTML file létrehozása, szerkesztése
 touch web/index.html
 cat <<EOF> web/index.html
-Sikeres vizsga!
+Vizsga 2018
 EOF
 
 #Docker image készítése, futtatása
 cd ~
 cd Docker
-sudo docker build -t nginx .
-sudo docker run -p 80:80 -d nginx
+sudo docker build -t ng .
+#sudo docker run -p 80:80 -d ng
