@@ -44,4 +44,4 @@ EOF
 cd ~
 cd Docker
 sudo docker build -t ng .
-#sudo docker run --name webszerver -p 80:80 -it ng
+#sudo docker run -p 80:80 -d ng
